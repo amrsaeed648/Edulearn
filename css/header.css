@@ -1,0 +1,194 @@
+.main-header{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 13px 42px;
+    background-color: var(--color-bg-elevated);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+}
+
+.main-header .brand{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+.main-header .logo{
+    display: grid;
+    place-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+}
+
+.main-header .menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.main-header .nav{
+    display: flex;
+    gap: 23px;
+    margin-inline: auto;
+}
+.main-header .nav a{
+    font-weight: 500;
+    color: var(--color-text-lighter);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+
+.main-header .nav a.active {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 8px;
+}
+
+.main-header .nav a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 8px;
+}
+
+.main-header .actions{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-header .theme-btn{
+    display: grid;
+    place-items: center;
+    width: 33px;
+    height: 33px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--color-bg-elevated);
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.main-header .theme-btn:hover{
+    background: var(--color-bg-darker);
+}
+
+.main-header .theme-img{
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.main-header .actions .btn{
+    font-weight: 700;
+    font-size: 12px;
+    padding: 7px 18px;
+    text-decoration: none;
+    border-radius: 999px;
+    transition: background .3s, border-color .3s, transform .3s;
+}
+
+.main-header .outline{
+    color: var(--color-text-lighter);
+    border: solid 1px var(--border);
+}
+
+.main-header .solid{
+    color: #e6eaf1;
+    background-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.main-header .outline:hover{
+    color: var(--color-primary-light);
+    border: solid 1px var(--color-primary-light);
+}
+
+.main-header .solid:hover{
+    background-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+}
+
+.nav-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-toggle .bar {
+    width: 20px;
+    height: 1.8px;
+    border-radius: 999px;
+    background-color: var(--color-text-lighter);
+}
+
+@media (max-width: 900px) {
+    .nav-toggle {
+        display: flex;
+    }
+
+    .main-header .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 10px;
+        right: 10px;
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px;
+        background-color: var(--color-bg-elevated);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        box-shadow: var(--shadow-md);
+        z-index: 100;
+    }
+
+    .main-header .menu.show,
+    .main-header .menu.collapsing {
+        display: flex;
+    }
+
+    .main-header .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-header .actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-header .actions .btn {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-header .theme-btn {
+        align-self: flex-start;
+    }
+}
