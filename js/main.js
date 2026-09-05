@@ -1,6 +1,6 @@
 const COMPONENTS = [
-  { slot: 'header-container', file: 'components/header.html' },
-  { slot: 'footer-container', file: 'components/footer.html' },
+    { slot: 'header-container', file: 'components/header.html' },
+    { slot: 'footer-container', file: 'components/footer.html' },
 ];
 
 async function loadComponents() {
@@ -31,6 +31,11 @@ async function loadComponents() {
 }
 
 loadComponents();
+
+
+
+
+
 let lists = document.querySelectorAll(".mli");
 
 lists.forEach(element => {
@@ -46,4 +51,55 @@ lists.forEach(element => {
 );
 
 
-// document.documentElement.classList.add("dark");
+
+
+
+
+
+const searchInput = document.querySelector(".search");
+
+const courses = document.querySelectorAll("main .core .source .mid-part .course");
+
+function filterCourses(){
+    
+    const searchValue = searchInput.value.toLowerCase().trim();
+
+    courses.forEach(course=>{
+        const courseContant = course.querySelector("main .core .source .mid-part .course .contant-part h3").textContent.toLowerCase();
+
+        if(courseContant.includes(searchValue))
+        {
+            course.style.display = "block";
+        }else{
+            course.style.display = "none";
+        }
+    });
+}
+
+searchInput.addEventListener("input",filterCourses);
+
+
+
+
+
+
+
+const TopBars_Choose = document.querySelectorAll("main .core .source .top-part li");
+
+function specific_courses(event){
+    TopBars_Choose.forEach(bar=>{
+        const contantBar = event.currentTarget.textContent.toLowerCase().trim();
+        courses.forEach(course=>{
+            const course_type = course.querySelector("#sp").textContent.toLowerCase();
+            if(course_type.includes(contantBar) | contantBar == "all"){
+                course.style.display = "block";
+            }else{
+                course.style.display = "none";
+            }
+        });
+    });
+}
+
+TopBars_Choose.forEach(bar=>{
+    bar.addEventListener("click",specific_courses);
+});

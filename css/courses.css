@@ -9,7 +9,7 @@ main .core {
 
 
 main .core h1{
-    margin-top: 50px;
+    margin-top: 100px;
     color: var(--color-me);
     font-family: var(--font-heading);
     font-size:x-large
@@ -40,6 +40,7 @@ main .core .source .top-part {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    transition: 0.3s;
 }
 
 
@@ -67,7 +68,6 @@ main .core .source .top-part #sec input{
     color: var(--color-text);
     caret-color: var(--color-text);
 }
-
 
 
 main .core .source .top-part #sec::before{
@@ -212,8 +212,8 @@ main .core .source .mid-part .course .foot-part button{
     border: none;
     border-radius: 10px;
     height: 40px;
-    color: var(--color-primary-subtle);
-    transition: 0.4s;
+    color: white;
+    transition: 0.3s;
     box-shadow: var(--shadow-sm);
 }
 
@@ -240,6 +240,7 @@ main .core .source .mid-part .course .foot-part span i{
     color: var(--color-text);
     margin-right: 2px;
 }
+
 
 main .core .source .mid-part .course .image-part #sp{
     background-color: var(--color-text-muted);
@@ -271,20 +272,22 @@ main .core .source .mid-part .course .image-part .rating span{
     font-size: x-small;
 }
 
+
 main .core .source .mid-part .course .image-part .rating i,
 main .core .source .mid-part .course .image-part .rating span{
     color: goldenrod;
 }
 
-.active{
+
+main .core .source .top-part ul .active{
     color: white;
     background-color: var(--color-primary);
 }
 
+
 .backHover{
     background-color: var(--color-bac-li)
 }
-
 
 
 .backHover:hover{

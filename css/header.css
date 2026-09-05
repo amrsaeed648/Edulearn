@@ -1,9 +1,18 @@
+#header-container{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+
 .main-header{
     display: flex;
     align-items: center;
     gap: 32px;
     padding: 13px 42px;
-    background-color: var(--color-bg-elevated);
+    background: transparent;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
     position: relative;
 }
