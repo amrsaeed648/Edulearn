@@ -1,76 +1,129 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap");
 :root {
-    --color-primary-darkest: #1E3A8A; 
-    --color-primary-dark: #1D4ED8; 
-    --color-primary: #2563EB;
-    --color-primary-light: #3B82F6;
-    --color-primary-lighter: #93C5FD;
-    --color-primary-subtle: #EFF6FF;
-    --color-accent: #06B6D4;
-    --color-yellow: #F2B426; 
-    --color-text:   #1E293B;
-    --color-text-lighter: #435367;
-    --color-text-muted: #64748B;
-    --color-bg-base:  #F1F5F9;
-    --color-bg-darker:  #f0f2f6;
-    --color-bg-elevated: #FFFFFF;
+  --color-primary-darkest: #1e3a8a;
+  --color-primary-dark: #1d4ed8;
+  --color-primary: #2563eb;
+  --color-primary-light: #3b82f6;
+  --color-primary-lighter: #93c5fd;
+  --color-primary-subtle: #eff6ff;
+  --color-accent: #06b6d4;
+  --color-yellow: #f2b426;
+  --color-text: #1e293b;
+  --color-text-lighter: #435367;
+  --color-text-muted: #64748b;
+  --color-bg-base: #f6f8fa;
+  --color-bg-darker: #f0f2f6;
+  --color-bg-elevated: #ffffff;
+  --color-bg-elevated2: #ffffff;
 
+  --color-footer-bg: 255, 255, 255;
 
+  --color-hov-li: #3b83f65d;
+  --color-bac-li: #ffffff63;
+  --color-me: black;
+  --shadow-me: 0px 0px 10px rgba(0, 0, 0, 0.103);
+  --shadow-hov: 0px 0px 20px rgba(0, 0, 0, 0.371);
 
-    --color-hov-li : #3b83f65d;
-    --color-bac-li :#ffffff63;
-    --color-me: black;
-    --shadow-me : 0px 0px 10px rgba(0, 0, 0, 0.103);
-    --shadow-hov : 0px 0px 20px  rgba(0, 0, 0, 0.371);
+  --shadow-sm: 0 2px 6px rgba(30, 64, 175, 0.1);
+  --shadow-md: 0 6px 16px rgba(30, 64, 175, 0.14);
+  --shadow-lg: 0 12px 32px rgba(30, 58, 138, 0.18);
 
+  --border: rgba(30, 58, 138, 0.12);
+  --top-light: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  /* 
+  --gradient-background: linear-gradient(
+    90deg,
+    #f7f8fc 0%,
+    #e9f1fe 60%,
+    #f7f8fc 100%
+  ); */
 
+  --gradient-background:
+    radial-gradient(
+      900px 600px at 85% 12%,
+      rgba(37, 99, 235, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 500px at 96% 45%,
+      rgba(125, 211, 252, 0.2),
+      transparent 65%
+    ),
+    radial-gradient(
+      800px 500px at 8% 92%,
+      rgba(199, 210, 254, 0.22),
+      transparent 70%
+    ),
+    linear-gradient(
+      115deg,
+      transparent 55%,
+      rgba(255, 255, 255, 0.55) 70%,
+      transparent 85%
+    ),
+    linear-gradient(90deg, #f7f8fc 0%, #e9f1fe 60%, #f7f8fc 100%);
 
-    --shadow-sm: 0 2px 6px  rgba(30, 64, 175, .10);
-    --shadow-md: 0 6px 16px rgba(30, 64, 175, .14);
-    --shadow-lg: 0 12px 32px rgba(30, 58, 138, .18);
-
-    --border:    rgba(30, 58, 138, .12);
-    --top-light: inset 0 1px 0 rgba(255, 255, 255, .6);
-
-    --font-heading: "Plus Jakarta Sans", "Segoe UI", sans-serif;
-    --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-heading: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
 }
 
 :root.dark {
-    --color-primary-darkest: #0B1120; 
-    --color-primary-dark: #2563EB; 
-    --color-primary: #3B82F6;
-    --color-primary-light: #60A5FA;
-    --color-primary-lighter: #93C5FD;
-    --color-primary-subtle: #0F1B31;
-    --color-accent: #22D3EE;
-    --color-yellow: #FBBF24;
-    --color-text:   #E2E8F0;
-    --color-text-lighter: #e6eaf1;
-    --color-text-muted: #A0AEC0;
-    --color-bg-base:  #0B1220;
-    --color-bg-darker:  #233148;
-    --color-bg-elevated: #142033;
+  --color-primary-darkest: #0b1120;
+  --color-primary-dark: #2563eb;
+  --color-primary: #3b82f6;
+  --color-primary-light: #60a5fa;
+  --color-primary-lighter: #93c5fd;
+  --color-primary-subtle: #0f1b31;
+  --color-accent: #22d3ee;
+  --color-yellow: #fbbf24;
+  --color-text: #e2e8f0;
+  --color-text-lighter: #e6eaf1;
+  --color-text-muted: #a0aec0;
+  --color-bg-base: #0b1220;
+  --color-bg-darker: #1d293c;
+  --color-bg-elevated: #142033;
+  --color-bg-elevated2: #1d293c;
 
+  --color-footer-bg: 20, 32, 51;
 
+  --color-hov-li: #204682be;
+  --color-bac-li: #2046825d;
+  --color-me: white;
+  --shadow-me: rgba(0, 0, 0, 0.103);
 
-    --color-hov-li : #204682be;
-    --color-bac-li :#2046825d;
-    --color-me:white;
-    --shadow-me : rgba(0, 0, 0, 0.103);
+  --shadow-sm: 0 2px 6px rgba(2, 6, 23, 0.55);
+  --shadow-md: 0 6px 16px rgba(2, 6, 23, 0.6);
+  --shadow-lg: 0 12px 32px rgba(1, 4, 14, 0.65);
 
+  --border: rgba(147, 197, 253, 0.16);
+  --border-he: rgba(255, 64, 0, 0.848);
+  --top-light: inset 0 1px 0 rgba(147, 197, 253, 0.07);
 
+  /* --gradient-background:
+    linear-gradient(90deg, #233148 0%, #142033 60%, #233148 100%) */
+  --gradient-background:
+    radial-gradient(
+      900px 600px at 85% 12%,
+      rgba(37, 99, 235, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 500px at 96% 45%,
+      rgba(56, 189, 248, 0.12),
+      transparent 65%
+    ),
+    radial-gradient(
+      800px 500px at 8% 92%,
+      rgba(99, 102, 241, 0.14),
+      transparent 70%
+    ),
+    linear-gradient(
+      115deg,
+      transparent 55%,
+      rgba(148, 197, 253, 0.07) 70%,
+      transparent 85%
+    ),
+    linear-gradient(90deg, #0b1220 0%, #0e1a33 60%, #0b1220 100%);
 
-    
-    --shadow-sm: 0 2px 6px  rgba(2, 6, 23, .55);
-    --shadow-md: 0 6px 16px rgba(2, 6, 23, .60);
-    --shadow-lg: 0 12px 32px rgba(1, 4, 14, .65);
-
-    --border:    rgba(147, 197, 253, .16);
-    --border-he : rgba(255, 64, 0, 0.848);
-    --top-light: inset 0 1px 0 rgba(147, 197, 253, .07);
-
-    --font-heading: "Plus Jakarta Sans", "Segoe UI", sans-serif;
-    --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-heading: "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
 }
-
