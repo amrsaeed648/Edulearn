@@ -183,14 +183,13 @@
 
 .courses {
   padding: 20px;
-  margin-top: 30px;
   background: var(--color-bg-base);
 }
 
 .section-head {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 25px;
+  margin: 30px auto 25px;
 }
 .section-head h2 {
   color: var(--color-lighter);
@@ -226,7 +225,7 @@
 }
 
 .courses-part .course .image-part,
-.courses-part .course .contant-part {
+.courses-part .course .content-part {
   width: 100%;
   height: 50%;
   position: relative;
@@ -248,18 +247,18 @@
   scale: 1.07;
 }
 
-.courses-part .course .contant-part {
+.courses-part .course .content-part {
   padding: 20px;
 }
 
-.courses-part .course .contant-part h3 {
+.courses-part .course .content-part h3 {
   color: var(--color-me);
   position: absolute;
   font-family: var(--fa-font-regular);
   font-size: medium;
 }
 
-.courses-part .course .contant-part p {
+.courses-part .course .content-part p {
   color: var(--color-text);
   position: absolute;
   top: 50px;

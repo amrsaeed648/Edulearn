@@ -143,7 +143,7 @@ main .core .source .mid-part .course:hover {
 
 
 main .core .source .mid-part .course .image-part,
-main .core .source .mid-part .course .contant-part{
+main .core .source .mid-part .course .content-part{
     width: 100%;
     height: 50%;
     position: relative;
@@ -171,12 +171,12 @@ main .core .source .mid-part .course .image-part img:hover{
 }
 
 
-main .core .source .mid-part .course .contant-part{
+main .core .source .mid-part .course .content-part{
     padding: 20px;
 }
 
 
-main .core .source .mid-part .course .contant-part h3{
+main .core .source .mid-part .course .content-part h3{
     color: var(--color-me);
     position: absolute;
     font-family: var(--fa-font-regular);
@@ -184,7 +184,7 @@ main .core .source .mid-part .course .contant-part h3{
 }
 
 
-main .core .source .mid-part .course .contant-part p{
+main .core .source .mid-part .course .content-part p{
     color: var(--color-text);
     position: absolute;
     top: 50px;
@@ -318,8 +318,6 @@ main .core .source .top-part {
 
 @media (max-width:575px){
     main .core .source .top-part ul{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
         justify-content: center;
     }
     main .core .source .top-part ul li{
