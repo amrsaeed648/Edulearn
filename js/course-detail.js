@@ -27,8 +27,3 @@ const b6 = document.getElementById("rest");
 b6.onclick = () => {
     window.location.href = "https://www.geeksforgeeks.org/node-js/rest-api-introduction/";
 }
-
-const b7 = document.getElementById("youtube");
-b7.onclick = () => {
-    window.location.href = "https://www.youtube.com/watch?v=MFsYaRnrcPQ";
-}
