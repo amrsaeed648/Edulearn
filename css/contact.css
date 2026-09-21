@@ -1,0 +1,124 @@
+/* standarization import */
+@import url("variables.css");
+@import url("reset.css");
+
+/* head text style */
+.contact-head-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.contact-head-text span {
+  color: var(--color-primary);
+}
+
+/* start main section style */
+.contact-main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* left side */
+.contact-main-left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.contact-card {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  box-shadow: var(--shadow-me);
+  height: 120px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--color-bg-darker);
+  border: var(--border);
+}
+.contact-card i {
+  box-shadow: var(--shadow-me);
+  background-color: var(--color-bg-elevated);
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card h1 {
+  font-size: 20px;
+}
+.contact-card p {
+  font-size: 15px;
+}
+.contact-refer-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact-refer-icons a {
+  color: var(--color-me);
+  box-shadow: var(--shadow-me);
+  background-color: var(--color-bg-elevated);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+/* right side */
+.contact-main-right {
+  display: flex;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+.contact-main-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-me);
+  height: 500px;
+  background-color: var(--color-bg-darker);
+  border: var(--border);
+}
+.contact-main-right input,
+textarea,#contact-main-form-btn {
+  padding: 10px;
+  height: 45px;
+  box-shadow: var(--shadow-me);
+  border: var(--border);
+  border-radius: 10px;
+  background-color: var(--color-bg-elevated);
+}
+.contact-main-right textarea {
+  height: 90px;
+}
+#contact-main-form-btn {
+  background-color: var(--color-primary);
+  color: var(--color-primary-subtle);
+}
+/* end main section style */
+
+/* design adjustment for smaller screens */
+@media (max-width: 900px) {
+  .contact-main {
+    flex-wrap: wrap;
+  }
+  .contact-main-left {
+    width: 100%;
+  }
+  .contact-main-right {
+    width: 100%;
+  }
+}
