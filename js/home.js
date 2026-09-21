@@ -22,7 +22,7 @@ async function loadComponents() {
     initThemeToggle();
     setActiveNavLink();
     function setActiveNavLink() {
-    const page = location.pathname.split("/").pop() || "index.html";
+    const page = location.pathname.split("/").pop() || "home.html";
     document.querySelectorAll("#header-container .nav a").forEach((link) => {
         if (link.getAttribute("href") === page) link.classList.add("active");
         });

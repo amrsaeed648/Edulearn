@@ -3,6 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/about.css" />
+    <!-- for responsive design -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- standard variables and style options for the entire project -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- for the footer and header to work -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- for the icons -->
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>About</title>
   </head>
   <body>
@@ -18,14 +37,16 @@
     <!-- start text section -->
     <section class="about-text">
       <!-- left side -->
-      <div class="about-text-left">
+      <div class="about-text-core">
         <h1>Our Story</h1>
+        <hr />
         <p>
-          Founded in 2020, EduLearn began with a simple mission: make quality
+          Founded in 2025, EduLearn began with a simple mission: make quality
           education accessible to everyone, everywhere. We curate the best
           YouTube educational content into structured learning paths, serving
           over 100,000 students across the globe.
         </p>
+        <br />
         <p>
           We believe that education should be practical, engaging, and led by
           industry professionals who bring real-world experience into every
@@ -33,46 +54,49 @@
         </p>
       </div>
       <!-- right side -->
-      <div class="about-text-right">
+      <div class="about-text-core">
         <h1>Our Mission</h1>
+        <hr />
         <p>
           To democratize education by curating the best free YouTube educational
           content into structured, expert-led courses that equip learners with
           the skills they need to succeed in the modern workforce.
         </p>
-        <div class="about-text-icons">
-          <img src="" alt="globe-icon" />
-          <p>Global Reach</p>
-        </div>
-        <div class="about-text-icons">
-          <img src="" alt="heart-icon" />
-          <p>Passionate</p>
-        </div>
-        <div class="about-text-icons">
-          <img src="" alt="rocket-icon" />
-          <p>Innovative</p>
+        <div class="about-icons-container">
+          <div class="about-text-icons">
+            <i class="fa-solid fa-earth-europe"></i>
+            <p>Global Reach</p>
+          </div>
+          <div class="about-text-icons">
+            <i class="fa-solid fa-heart"></i>
+            <p>Passionate</p>
+          </div>
+          <div class="about-text-icons">
+            <i class="fa-solid fa-rocket"></i>
+            <p>Innovative</p>
+          </div>
         </div>
       </div>
     </section>
     <!-- end text section -->
     <!-- start team section -->
-    <section>
+    <section class="about-team-section">
       <div class="team-head-text">
         <h1>Our <span>Team</span></h1>
         <p>Meet the people behind EduLearn</p>
       </div>
       <div class="team-cards-container">
         <div class="team-card">
+          <h1 id="team-lead-icon">AS</h1>
+          <h2>Amr Saeed</h2>
+          <h3 id="team-lead-role">Lead Engineer</h3>
+          <p>Worked on Header, Footer & Home Page</p>
+        </div>
+        <div class="team-card">
           <h1>FA</h1>
           <h2>Fares Ahmed</h2>
           <h3>Engineer</h3>
           <p>Worked on Courses Implementation</p>
-        </div>
-        <div class="team-card">
-          <h1>AS</h1>
-          <h2>Amr Saeed</h2>
-          <h3>Lead Engineer</h3>
-          <p>Worked on Header, Footer & Home Page</p>
         </div>
         <div class="team-card">
           <h1>OE</h1>
@@ -95,5 +119,10 @@
       </div>
     </section>
     <!-- end team section -->
+    <!-- footer including -->
+    <footer id="footer-container"></footer>
+    <!-- for the footer and header to work -->
+    <script src="js/theme.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
