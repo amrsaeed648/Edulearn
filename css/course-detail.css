@@ -37,6 +37,7 @@
     font-size: 20px;
     line-height: 1.5;
     font-family: var(--font-body);
+    color:  #a0aec0;
 }
 body{
     background-color: var(--color-bg-base);
@@ -53,7 +54,7 @@ body{
     margin: 0px;
 }
 .def{
-    box-shadow:var( --shadow-me);
+    /* box-shadow:var( --shadow-me); */
     border-radius: 25px;
     background-color: var(--color-bg-base);
     padding: 20px;
@@ -74,9 +75,10 @@ body{
     background-color: var(--color-primary);
     color:#F9FAFB ;
     border: none;
-    border-radius: 25px;
-    height: 50px;
-    padding: 15px;
+     /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    border-radius: 15px;
+    height: 40px;
+    padding: 10px;
 }
 /* .video-container { 
     border-radius: 12px;
@@ -97,29 +99,33 @@ iframe {
     align-items: center;
     gap: 50PX;
     margin: 0px;
+    height: 100%;
 }
 .right-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 200PX;
     position: sticky;
+    gap: 30px;
     top: 20px;
     box-shadow:var( --shadow-me);
     border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: var(--color-bg-base);
-    padding: 20px;
+    padding: 30px;
     width: 300px;
     height: 300px;
+
+    
 
 }
 .right-card h2{
     font-family: var(--font-heading);
-    color: var(--color-text);
+    color: var(--color-primary);
 }
 .right-card p{
     font-family: var(--font-body);
-    color: var(--color-text);
+    color: var(--color-primary);
 }
 .right-card button{
     font-family: var(--font-heading);
@@ -127,8 +133,30 @@ iframe {
     background-color: var(--color-primary);
     color:#F9FAFB ;
     border: none;
+    width: 100%;
     border-radius: 15px;
-    width: 200px;
-    height: 100%;
+    height: 40px;
+    padding: 5px;
     
+}
+.right-card button:hover{
+    background-color: var(--color-primary-dark) ;
+}
+.h-but{
+    font-family: var(--font-heading);
+    font-size: 12px;
+    background-color: var(--color-bg-base);
+    opacity: 0.6;
+    color: var(--color-primary);
+    border: none;
+    border-radius: 15px;
+    height: 35px;
+    padding: 8px;
+
+}
+.features-list li {
+    /* display: flex;
+    align-items: center; */
+    gap: 12px;
+    font-size: 14px;
 }
