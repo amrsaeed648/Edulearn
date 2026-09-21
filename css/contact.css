@@ -26,9 +26,9 @@
 /* left side */
 .contact-main-left {
   display: flex;
-  align-items: center;
+  align-items: end;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
 }
 .contact-card {
   display: flex;
@@ -40,12 +40,12 @@
   border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: var(--color-bg-darker);
+  background-color: var(--color-bg-elevated);
   border: var(--border);
 }
 .contact-card i {
   box-shadow: var(--shadow-me);
-  background-color: var(--color-bg-elevated);
+  background-color: var(--color-bg-elevated2);
   height: 40px;
   width: 40px;
   margin-right: 20px;
@@ -63,12 +63,13 @@
 .contact-refer-icons {
   display: flex;
   justify-content: center;
+  width: 60%;
   margin-top: 20px;
 }
 .contact-refer-icons a {
   color: var(--color-me);
   box-shadow: var(--shadow-me);
-  background-color: var(--color-bg-elevated);
+  background-color: var(--color-bg-elevated2);
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
@@ -76,9 +77,9 @@
 /* right side */
 .contact-main-right {
   display: flex;
-  width: 50%;
+  width: 45%;
   text-align: center;
-  justify-content: center;
+  justify-content: start;
 }
 .contact-main-right form {
   display: flex;
@@ -89,7 +90,7 @@
   border-radius: 20px;
   box-shadow: var(--shadow-me);
   height: 500px;
-  background-color: var(--color-bg-darker);
+  background-color: var(--color-bg-elevated);
   border: var(--border);
 }
 .contact-main-right input,
@@ -99,14 +100,14 @@ textarea,#contact-main-form-btn {
   box-shadow: var(--shadow-me);
   border: var(--border);
   border-radius: 10px;
-  background-color: var(--color-bg-elevated);
+  background-color: var(--color-bg-elevated2);
 }
 .contact-main-right textarea {
   height: 90px;
 }
 #contact-main-form-btn {
   background-color: var(--color-primary);
-  color: var(--color-primary-subtle);
+  color: var(--color-me);
 }
 /* end main section style */
 
@@ -117,8 +118,11 @@ textarea,#contact-main-form-btn {
   }
   .contact-main-left {
     width: 100%;
+    align-items: center;
   }
   .contact-main-right {
     width: 100%;
+    margin: 20px;
+    justify-content: center;
   }
 }
