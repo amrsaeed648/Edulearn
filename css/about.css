@@ -1,3 +1,134 @@
 /* standarization import */
 @import url("variables.css");
 @import url("reset.css");
+/* head text style */
+.about-head-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.about-head-text span {
+  color: var(--color-primary);
+}
+/*start text section style */
+.about-text {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-text-core {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  box-shadow: var(--shadow-me);
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--color-bg-elevated);
+  border: var(--border);
+}
+.about-text-core hr {
+  height: 5px;
+  width: 100px;
+  border: none;
+  background-color: var(--color-primary);
+  margin-bottom: 5px;
+}
+.about-icons-container {
+  display: flex;
+  margin-top: auto;
+}
+.about-text-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.about-text-icons i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-bg-elevated2);
+  box-shadow: var(--shadow-me);
+  height: 50px;
+  width: 50px;
+}
+/*end text section style */
+
+/* team head text style */
+.team-head-text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team-head-text span {
+  color: var(--color-primary);
+}
+
+/* start team section style */
+.team-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.team-card {
+  display: flex;
+  text-align: center;
+  background-color: var(--color-bg-elevated);
+  box-shadow: var(--shadow-me);
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.team-card p {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 15px;
+}
+.team-card h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary-subtle);
+  background-color: var(--color-primary);
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+}
+#team-lead-icon {
+  background-color: var(--color-primary-dark);
+}
+.team-card h3 {
+  color: var(--color-primary);
+}
+#team-lead-role {
+  color: var(--color-primary-dark);
+}
+/* design adjustment for smaller screens */
+@media (max-width: 900px) {
+  .about-text {
+    flex-wrap: wrap;
+  }
+  .about-text-core {
+    width: 95%;
+    align-items: center;
+  }
+}
