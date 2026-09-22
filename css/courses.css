@@ -203,7 +203,7 @@ main .core .source .mid-part .course .foot-part{
 }
 
 
-main .core .source .mid-part .course .foot-part button{
+main .core .source .mid-part .course .foot-part a{
     width: 60%;
     font-family: var(--fa-font-regular);
     font-weight: 600;
@@ -213,12 +213,17 @@ main .core .source .mid-part .course .foot-part button{
     border-radius: 10px;
     height: 40px;
     color: white;
-    transition: 0.3s;
+    transition: 0.5s;
     box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
 }
 
 
-main .core .source .mid-part .course .foot-part button:hover{
+main .core .source .mid-part .course .foot-part a:hover{
     background-color: var(--color-primary-dark);
     scale: 1.05;
     box-shadow:var(--shadow-me);
@@ -306,12 +311,18 @@ main .core .source .top-part #sec{
 main .core .source .top-part {
     justify-content: center;
 }
+main .core .source .mid-part .course .content-part p{
+    padding: 0px 3px 0px 0px ;
+    }
 }
 
 
 @media(max-width:767px){
         main .core .source .mid-part{
     grid-template-columns: repeat(1 , minmax(0 , 1fr));
+}
+main .core .source .mid-part .course .foot-part a{
+    width: 50%;
 }
 }
 

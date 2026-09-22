@@ -108,7 +108,7 @@ iframe {
     align-items: center;
     position: sticky;
     gap: 30px;
-    top: 20px;
+    top: 80px;
     box-shadow:var( --shadow-me);
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
