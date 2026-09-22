@@ -1,6 +1,7 @@
 .hero {
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
+    min-height: 50vh;
 
     background-image:
            linear-gradient(
@@ -15,31 +16,49 @@
 
     display: flex;
     align-items: center;
-
+    justify-content: center; 
 }
 .hero-content {
     position: relative;
     z-index: 1;
     color: white;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 300px;
-    padding-bottom: 100px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    padding: 120px 20px 0px;
+    /* padding-top: 300px;
+    padding-bottom: 100px; */
+    text-align: center; /* النص سنتر في الموبايل أحسن */
+    width: 100%;
+    max-width: 800px;
     /* max-width: 650px; */
-    margin: 0px;
+    /* margin: 0px; */
 }
 
 .hero-content h1 {
-    font-size: 50px;
-    margin: 20px 0;
+    /* font-size: 50px; */
+    font-size: clamp(28px, 5vw, 50px);/*علي حسب حجم الشاشه*/
+    margin: 15px 0;
     font-family: var(--font-heading);
 }
 
 .hero-content p {
-    font-size: 20px;
-    line-height: 1.5;
+    /* font-size: 20px; */
+    font-size: clamp(16px, 3vw, 20px);
+    line-height: 1.6;
     font-family: var(--font-body);
     color:  #a0aec0;
+}
+@media (min-width: 768px) {
+    .hero {
+        justify-content: flex-start !important; 
+    }
+    .hero-content {
+        text-align: left !important; 
+        padding: 300px 50px 100px 60px !important;
+        margin: 0 !important;
+        max-width: 700px !important;
+       
+    }
 }
 body{
     background-color: var(--color-bg-base);
@@ -60,7 +79,12 @@ body{
     border-radius: 25px;
     background-color: var(--color-bg-base);
     padding: 20px;
-    width: 700px;
+
+    /* width: 700px; */
+    width: 100%; 
+    max-width: 700px; 
+
+    box-sizing: border-box;
 }
 .def h2{
     font-family: var(--font-heading);
@@ -101,9 +125,22 @@ iframe {
 }
 .content-wrapper{
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    flex-direction: column; 
+    align-items: center;
     position: relative;
     gap: 30px;
+
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 20px;
+    margin: 0 auto;
+}
+@media (min-width: 900px) {
+    .content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }
 .left-section{
     display: flex;
@@ -118,15 +155,18 @@ iframe {
     flex-direction: column;
     align-items: center;
     position: sticky;
-    gap: 30px;
+    gap: 20px;
     top: 80px;
     box-shadow:var( --shadow-me);
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: var(--color-bg-base);
     padding: 30px;
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
 .right-card h2{
     font-family: var(--font-heading);
@@ -176,21 +216,26 @@ iframe {
 }
 .parteners-sec{
     margin: 0px;
-    padding: 50px;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
+    width: 100%;
 }
 .grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 900px;
+    justify-content: center;
 }
-@media (max-width:900px){
-    .grid{grid-template-columns:repeat(1,1fr);}
+@media (max-width:768px){
+    .grid{grid-template-columns:repeat(2,1fr);}
 }
-@media (max-width:520px){
+@media (max-width:480px){
     .grid{grid-template-columns:1fr;}
 }
 .card{
@@ -203,10 +248,23 @@ iframe {
     flex-direction:column;
     align-items:center;
     text-align:center;
-    gap: 20px;
+    gap: 15px;
     text-decoration:none;
     color:var(--text);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 /* .logo img{
     width: 100px;
 } */
+
+#course-video {
+    width: 100%;
+    aspect-ratio: 16 / 9; /*  يحافظ على أبعاد يوتيوب الأصلية مهما كان عرض الشاشة */
+    height: auto;
+    max-height: 500px;
+    border-radius: 12px;
+}
