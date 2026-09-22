@@ -1,0 +1,410 @@
+{
+    "1": {
+        "title": "UI/UX Design",
+        "summary": "Design intuitive interfaces and inspire users with modern design principles.",
+        "description": "Learn professional UI/UX Design with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://www.figma.com/learning/",
+                "text": "Wireframing & Prototyping"
+            },
+            "link2": {
+                "url": "https://www.adobe.com/products/xd/learn.html",
+                "text": "User Interface Design"
+            },
+            "link3": {
+                "url": "https://www.w3schools.com/css/",
+                "text": "CSS Styling"
+            },
+            "link4": {
+                "url": "https://www.w3schools.com/html/",
+                "text": "HTML Structure"
+            },
+            "link5": {
+                "url": "https://www.w3schools.com/js/",
+                "text": "Interactive Design"
+            },
+            "link6": {
+                "url": "https://www.w3schools.com/whatis/whatis_responsive.asp",
+                "text": "Responsive Design"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/jQ1sfKIl50E",
+        "image": "../assets/images/im1.png",
+        "category": "Design"
+    },
+    "2": {
+        "title": "Machine Learning",
+        "summary": "Teach computers to learn from data and build intelligent solutions.",
+        "description": "Learn professional Machine Learning with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://www.tensorflow.org/tutorials",
+                "text": "Data Preprocessing"
+            },
+            "link2": {
+                "url": "https://pytorch.org/tutorials/",
+                "text": "Machine Learning Models"
+            },
+            "link3": {
+                "url": "https://www.w3schools.com/ai/ai_neural_network.asp",
+                "text": "Neural Networks"
+            },
+            "link4": {
+                "url": "https://scikit-learn.org/stable/supervised_learning.html",
+                "text": "Model Evaluation"
+            },
+            "link5": {
+                "url": "https://www.python.org/about/gettingstarted/",
+                "text": "Python for ML"
+            },
+            "link6": {
+                "url": "https://keras.io/guides/",
+                "text": "Deep Learning"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/w7vqXL4PWEE",
+        "image": "../assets/images/im2.png",
+        "category": "AI & ML"
+    },
+    "3": {
+        "title": "JavaScript",
+        "summary": "Master the language of the web and build interactive applications.",
+        "description": "Learn professional JavaScript with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                "text": "JavaScript Fundamentals"
+            },
+            "link2": {
+                "url": "https://www.w3schools.com/js/js_htmldom.asp",
+                "text": "DOM Manipulation"
+            },
+            "link3": {
+                "url": "https://javascript.info/",
+                "text": "ES6+ Features"
+            },
+            "link4": {
+                "url": "https://javascript.info/async",
+                "text": "Asynchronous JavaScript"
+            },
+            "link5": {
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API",
+                "text": "APIs & Fetch"
+            },
+            "link6": {
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client_side_tools",
+                "text": "Debugging"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/W6NZfCO5SIk",
+        "image": "../assets/images/im3.png",
+        "category": "Development"
+    },
+    "4": {
+        "title": "Python Fundamentals",
+        "summary": "Build a strong foundation in one of the most popular programming languages.",
+        "description": "Learn professional Python with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://docs.python.org/3/tutorial/",
+                "text": "Python Syntax"
+            },
+            "link2": {
+                "url": "https://docs.python.org/3/tutorial/introduction.html",
+                "text": "Variables & Data Types"
+            },
+            "link3": {
+                "url": "https://docs.python.org/3/tutorial/controlflow.html",
+                "text": "Control Flow"
+            },
+            "link4": {
+                "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+                "text": "Functions"
+            },
+            "link5": {
+                "url": "https://docs.python.org/3/tutorial/classes.html",
+                "text": "Object-Oriented Programming"
+            },
+            "link6": {
+                "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+                "text": "File Handling"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+        "image": "../assets/images/im4.png",
+        "category": "Programming"
+    },
+    "5": {
+        "title": "Full Stack Development",
+        "summary": "Become a versatile developer capable of building complete web applications.",
+        "description": "Learn professional Full Stack Development with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://www.w3schools.com/html/",
+                "text": "HTML & CSS"
+            },
+            "link2": {
+                "url": "https://www.w3schools.com/js/",
+                "text": "JavaScript"
+            },
+            "link3": {
+                "url": "https://react.dev/learn",
+                "text": "Front-End Frameworks"
+            },
+            "link4": {
+                "url": "https://nodejs.org/en/docs/",
+                "text": "Back-End APIs"
+            },
+            "link5": {
+                "url": "https://www.mongodb.com/docs/",
+                "text": "Database Integration"
+            },
+            "link6": {
+                "url": "https://www.heroku.com/deployment",
+                "text": "Deployment"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/Dhusia7HoyA",
+        "image": "../assets/images/im5.png",
+        "category": "Development"
+    },
+    "6": {
+        "title": "Front-End Development",
+        "summary": "Create stunning user interfaces and responsive web experiences.",
+        "description": "Learn professional Front-End Development with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://www.w3schools.com/html/",
+                "text": "HTML5"
+            },
+            "link2": {
+                "url": "https://www.w3schools.com/css/",
+                "text": "CSS3"
+            },
+            "link3": {
+                "url": "https://www.w3schools.com/js/",
+                "text": "JavaScript"
+            },
+            "link4": {
+                "url": "https://www.w3schools.com/css/css_rwd.asp",
+                "text": "Responsive Web Design"
+            },
+            "link5": {
+                "url": "https://getbootstrap.com/docs/",
+                "text": "CSS Frameworks"
+            },
+            "link6": {
+                "url": "https://web.dev/performance/",
+                "text": "Web Performance"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/pQN-pnXPaVg",
+        "image": "../assets/images/im6.png",
+        "category": "Development"
+    },
+    "7": {
+        "title": "Back-End (.NET)",
+        "summary": "Build robust server-side applications with Microsoft's .NET framework.",
+        "description": "Learn professional Back-End Development with .NET using industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+                "text": "C# Programming"
+            },
+            "link2": {
+                "url": "https://learn.microsoft.com/en-us/aspnet/core/",
+                "text": "ASP.NET Core"
+            },
+            "link3": {
+                "url": "https://learn.microsoft.com/en-us/aspnet/core/web-api/",
+                "text": "RESTful APIs"
+            },
+            "link4": {
+                "url": "https://learn.microsoft.com/en-us/ef/",
+                "text": "Entity Framework Core"
+            },
+            "link5": {
+                "url": "https://learn.microsoft.com/en-us/aspnet/core/security/",
+                "text": "Authentication & Authorization"
+            },
+            "link6": {
+                "url": "https://learn.microsoft.com/en-us/sql/",
+                "text": "SQL Server Integration"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/41o9H8j9304",
+        "image": "../assets/images/im7.png",
+        "category": "Development"
+    },
+    "8": {
+        "title": "C++ Problem Solving",
+        "summary": "Master algorithmic thinking and competitive programming with C++.",
+        "description": "Learn professional C++ Problem Solving with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://www.learncpp.com/",
+                "text": "C++ Fundamentals"
+            },
+            "link2": {
+                "url": "https://www.learncpp.com/cpp-tutorial-arrays-and-strings/",
+                "text": "Arrays & Strings"
+            },
+            "link3": {
+                "url": "https://www.learncpp.com/cpp-tutorial-stdarray-and-stdvector/",
+                "text": "Data Structures"
+            },
+            "link4": {
+                "url": "https://www.learncpp.com/cpp-tutorial-algorithm-complexity-and-big-o-notation/",
+                "text": "Algorithms"
+            },
+            "link5": {
+                "url": "https://www.learncpp.com/cpp-tutorial-introduction-to-recursion/",
+                "text": "Recursion"
+            },
+            "link6": {
+                "url": "https://codeforces.com/",
+                "text": "Competitive Programming"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/Iuo9PZGE04Y",
+        "image": "../assets/images/im8.png",
+        "category": "Programming"
+    },
+    "9": {
+        "title": "Data Analyst",
+        "summary": "Transform raw data into actionable insights and drive business decisions.",
+        "description": "Learn professional Data Analysis with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://pandas.pydata.org/docs/user_guide/cleaning.html",
+                "text": "Data Cleaning"
+            },
+            "link2": {
+                "url": "https://www.w3schools.com/sql/",
+                "text": "SQL Queries"
+            },
+            "link3": {
+                "url": "https://support.microsoft.com/en-us/excel",
+                "text": "Excel Analysis"
+            },
+            "link4": {
+                "url": "https://www.tableau.com/learn",
+                "text": "Data Visualization"
+            },
+            "link5": {
+                "url": "https://learn.microsoft.com/en-us/power-bi/",
+                "text": "Power BI Dashboards"
+            },
+            "link6": {
+                "url": "https://www.python.org/about/gettingstarted/",
+                "text": "Python for Data Analysis"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/ua-Ci5NNjck",
+        "image": "../assets/images/im9.png",
+        "category": "Data Science"
+    },
+    "10": {
+        "title": "Cloud Computing AWS Azure",
+        "summary": "Master cloud infrastructure and deployment on leading platforms.",
+        "description": "Learn professional Cloud Computing with AWS and Azure using industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://aws.amazon.com/what-is-cloud-computing/",
+                "text": "Cloud Fundamentals"
+            },
+            "link2": {
+                "url": "https://aws.amazon.com/products/",
+                "text": "AWS Services"
+            },
+            "link3": {
+                "url": "https://azure.microsoft.com/en-us/services/",
+                "text": "Azure Services"
+            },
+            "link4": {
+                "url": "https://azure.microsoft.com/en-us/services/virtual-machines/",
+                "text": "Virtual Machines"
+            },
+            "link5": {
+                "url": "https://aws.amazon.com/s3/",
+                "text": "Cloud Storage"
+            },
+            "link6": {
+                "url": "https://aws.amazon.com/security/",
+                "text": "Cloud Security"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/M988kfzVKxE",
+        "image": "../assets/images/img10.png",
+        "category": "Cloud"
+    },
+    "11": {
+        "title": "Database SQL Course",
+        "summary": "Learn to design, query, and manage relational databases effectively.",
+        "description": "Learn professional Database management with SQL using industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://www.w3schools.com/sql/sql_intro.asp",
+                "text": "Database Design"
+            },
+            "link2": {
+                "url": "https://www.w3schools.com/sql/",
+                "text": "SQL Queries"
+            },
+            "link3": {
+                "url": "https://www.w3schools.com/sql/sql_join.asp",
+                "text": "Joins & Relationships"
+            },
+            "link4": {
+                "url": "https://www.w3schools.com/sql/sql_stored_procedures.asp",
+                "text": "Stored Procedures"
+            },
+            "link5": {
+                "url": "https://www.w3schools.com/sql/sql_normalize.asp",
+                "text": "Database Normalization"
+            },
+            "link6": {
+                "url": "https://www.w3schools.com/sql/sql_optimization.asp",
+                "text": "Query Optimization"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/HXV3zeQKqGY",
+        "image": "../assets/images/img11.png",
+        "category": "Database"
+    },
+    "12": {
+        "title": "React.js Development",
+        "summary": "Build modern, dynamic user interfaces with the most popular JavaScript library.",
+        "description": "Learn professional React.js Development with industry-standard tools and techniques. This comprehensive course covers everything from fundamentals to advanced concepts, preparing you for real-world challenges. You'll work on hands-on projects and build a portfolio that stands out.",
+        "links": {
+            "link1": {
+                "url": "https://react.dev/learn",
+                "text": "React Components"
+            },
+            "link2": {
+                "url": "https://react.dev/learn/describing-the-ui",
+                "text": "JSX"
+            },
+            "link3": {
+                "url": "https://react.dev/learn/managing-state",
+                "text": "State Management"
+            },
+            "link4": {
+                "url": "https://react.dev/learn/escape-hatches",
+                "text": "React Hooks"
+            },
+            "link5": {
+                "url": "https://reactrouter.com/",
+                "text": "React Router"
+            },
+            "link6": {
+                "url": "https://www.robinwieruch.de/react-hooks-fetch-data/",
+                "text": "API Integration"
+            }
+        },
+        "videoUrl": "https://www.youtube.com/embed/SqcY0GlETPk",
+        "image": "../assets/images/img12.png",
+        "category": "Development"
+    }
+}

@@ -8,7 +8,7 @@
             rgba(41, 93, 213, 0.3),
             #1e3a8a
         ),
-        var(--hero-bg, url("../assets/images/im7.png")); /*صوره defulat لو حاجه مشتغلتش*/
+        var(--hero-bg, url("../assets/images/logo.png")); /*صوره defulat لو حاجه مشتغلتش*/
 
     background-size: cover;
     background-position: center;
@@ -68,23 +68,32 @@ body{
     font-family: var(--font-body);
     color: var(--color-text);
 }
-.ss:hover{
-    background-color: var(--color-primary-dark) ;
-}
 .ss{
+
+    display: inline-flex;
+    align-items: center;
+
     background-color: var(--color-primary);
     color:#F9FAFB ;
+
     border: none;
-     /* border: 1px solid rgba(255, 255, 255, 0.1); */
-    border-radius: 15px;
+    border-radius: 999px;
     height: 40px;
     padding: 10px;
+
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
 }
-/* .video-container { 
-    border-radius: 12px;
-    overflow: hidden;
-} */
+.ss:hover{
+    background-color: var(--color-primary-dark) ;
+    transform: scale(1.05);
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 iframe {
     border-radius: 12px;
 }
@@ -116,9 +125,6 @@ iframe {
     padding: 30px;
     width: 300px;
     height: 300px;
-
-    
-
 }
 .right-card h2{
     font-family: var(--font-heading);
@@ -131,11 +137,12 @@ iframe {
 .right-card a{
     font-family: var(--font-heading);
     font-size: 20px;
+    font-weight: 500;
     background-color: var(--color-primary);
     color:#F9FAFB ;
     border: none;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 999px;
     height: 40px;
     padding: 5px;
     text-decoration: none;
@@ -144,6 +151,7 @@ iframe {
 }
 .right-card a:hover{
     background-color: var(--color-primary-dark) ;
+    scale: 1.05;
 }
 .h-but{
     font-family: var(--font-heading);
@@ -152,7 +160,7 @@ iframe {
     opacity: 0.6;
     color: var(--color-primary);
     border: none;
-    border-radius: 15px;
+    border-radius: 999px;
     height: 35px;
     padding: 8px;
 
