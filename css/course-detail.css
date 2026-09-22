@@ -8,7 +8,7 @@
             rgba(41, 93, 213, 0.3),
             #1e3a8a
         ),
-        url("../Images/im7.png");
+        var(--hero-bg, url("../assets/images/im7.png")); /*صوره defulat لو حاجه مشتغلتش*/
 
     background-size: cover;
     background-position: center;
@@ -79,6 +79,7 @@ body{
     border-radius: 15px;
     height: 40px;
     padding: 10px;
+    text-decoration: none;
 }
 /* .video-container { 
     border-radius: 12px;
@@ -127,7 +128,7 @@ iframe {
     font-family: var(--font-body);
     color: var(--color-primary);
 }
-.right-card button{
+.right-card a{
     font-family: var(--font-heading);
     font-size: 20px;
     background-color: var(--color-primary);
@@ -137,9 +138,11 @@ iframe {
     border-radius: 15px;
     height: 40px;
     padding: 5px;
+    text-decoration: none;
+    text-align: center;
     
 }
-.right-card button:hover{
+.right-card a:hover{
     background-color: var(--color-primary-dark) ;
 }
 .h-but{
