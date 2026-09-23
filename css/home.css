@@ -277,8 +277,8 @@
   align-items: center;
 }
 
-.courses-part .course .foot-part button {
-  flex: 1 1 auto;
+.courses-part .course .foot-part a { /*كانت button*/
+  /* flex: 1 1 auto;
   min-width: 0;
   font-size: 12px;
   width: 60%;
@@ -292,9 +292,30 @@
   color: white;
   transition: 0.3s;
   box-shadow: var(--shadow-sm);
+
+  text-decoration: none;
+  text-align: center;
+  
+  */
+    width: 60%;
+    font-family: var(--fa-font-regular);
+    font-weight: 600;
+    font-size: x-small;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    transition: 0.5s;
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
 }
 
-.courses-part .course .foot-part button:hover {
+.courses-part .course .foot-part a:hover { /*كانت button*/
   background-color: var(--color-primary-dark);
   scale: 1.05;
   box-shadow: var(--shadow-me);
