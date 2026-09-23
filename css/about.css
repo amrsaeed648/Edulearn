@@ -32,7 +32,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: var(--color-bg-elevated);
-  border: var(--border);
+  border: 1px solid var(--border);
+  transition: 0.5s;
+}
+.about-text-core:hover {
+  scale: 1.05;
 }
 .about-text-core hr {
   height: 5px;
@@ -54,6 +58,9 @@
 }
 .about-text-icons i {
   display: flex;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  margin-bottom: 7px;
   justify-content: center;
   align-items: center;
   background-color: var(--color-bg-elevated2);
@@ -97,11 +104,16 @@
   padding: 20px;
   margin-top: 20px;
   border-radius: 20px;
+  border: 1px solid var(--border);
+  transition: 0.5s;
+}
+.team-card:hover {
+  scale: 1.05;
 }
 .team-card p {
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
 }
 .team-card h1 {
   display: flex;
@@ -112,15 +124,58 @@
   height: 80px;
   width: 80px;
   border-radius: 100px;
+  transition: 0.5s;
 }
-#team-lead-icon {
-  background-color: var(--color-primary-dark);
+.team-card h1:hover {
+  transform: translateY(-5px);
 }
 .team-card h3 {
   color: var(--color-primary);
+  transition: 0.5s;
 }
-#team-lead-role {
-  color: var(--color-primary-dark);
+.team-card h3:hover {
+  transform: translateY(-5px);
+}
+/* special colors for members */
+.team-card:nth-child(1) h1 {
+  background: linear-gradient(135deg, #f12711 0%, #f5af19 100%);
+}
+.team-card:nth-child(1) h3 {
+  background: linear-gradient(135deg, #f12711, #f5af19);
+  background-clip: text;
+  color: transparent;
+}
+.team-card:nth-child(2) h1 {
+  background: linear-gradient(135deg, #348f50, #56b4d3);
+}
+.team-card:nth-child(2) h3 {
+  background: linear-gradient(135deg, #348f50, #56b4d3);
+  background-clip: text;
+  color: transparent;
+}
+.team-card:nth-child(3) h1 {
+  background: linear-gradient(135deg, #4a0e4e 0%, #812588 100%);
+}
+.team-card:nth-child(3) h3 {
+  background: linear-gradient(135deg, #4a0e4e 0%, #812588 100%);
+  background-clip: text;
+  color: transparent;
+}
+.team-card:nth-child(4) h1 {
+  background: linear-gradient(135deg, #cb2d3e, #f1594e);
+}
+.team-card:nth-child(4) h3 {
+  background: linear-gradient(135deg, #cb2d3e, #f1594e);
+  background-clip: text;
+  color: transparent;
+}
+.team-card:nth-child(5) h1 {
+  background: linear-gradient(135deg, #2e3192, #1bffff);
+}
+.team-card:nth-child(5) h3 {
+  background: linear-gradient(135deg, #2e3192, #1bffff);
+  background-clip: text;
+  color: transparent;
 }
 /* design adjustment for smaller screens */
 @media (max-width: 900px) {
@@ -128,7 +183,7 @@
     flex-wrap: wrap;
   }
   .about-text-core {
-    width: 95%;
+    width: 92%;
     align-items: center;
   }
 }
