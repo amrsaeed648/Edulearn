@@ -99,35 +99,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-
-// ============================================================================
-// 5. FLOATING LABEL FIX FOR ALL INPUTS (Username, Email, Password)
-// ============================================================================
-document.querySelectorAll('.input-box input').forEach((input) => {
-    // Check immediately if browser auto-filled the input
-    if (input.value.trim() !== '') {
-        input.parentElement.classList.add('has-text');
-    }
-
-    // Float label up when user clicks inside
-    input.addEventListener('focus', () => {
-        input.parentElement.classList.add('has-text');
-    });
-
-    // Keep label at the top after typing, or drop it back down if emptied
-    input.addEventListener('blur', () => {
-        if (input.value.trim() !== '') {
-            input.parentElement.classList.add('has-text');
-        } else {
-            input.parentElement.classList.remove('has-text');
-        }
-    });
-
-    // Also update live while typing
-    input.addEventListener('input', () => {
-        if (input.value.trim() !== '') {
-            input.parentElement.classList.add('has-text');
-        }
-    });
-});
-
