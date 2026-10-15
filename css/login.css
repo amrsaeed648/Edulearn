@@ -415,4 +415,50 @@ body {
         color: var(--color-accent) !important;
     }
 
+/* ==========================================================================
+   TEAM NOTE: EMAIL FLOATING LABEL & "WELCOME" HEADER ALIGNMENT FIXES
+   ========================================================================== */
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label,
+.input-box.has-text label,
+.input-box:has(input:focus) label,
+.input-box:has(input:not(:placeholder-shown)) label {
+    top: -5px !important;
+    color: #2b70fa !important;
+    font-size: 13px !important;
+}
+
+.container .content {
+    justify-content: flex-start !important;
+}
+
+.text-sci h2 {
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.text-sci h2 i {
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.text-sci h2 span {
+    font-size: 25px;
+    display: block;
+    margin-top: 4px;
+    margin-left: 45px;
+}
+
+@media (max-width: 768px) {
+    .text-sci h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .text-sci h2 i {
+        display: inline-block !important;
+    }
+}
+
+
 } 

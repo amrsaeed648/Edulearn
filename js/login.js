@@ -1,3 +1,8 @@
+// TEAM NOTE: Reset login status whenever someone opens the Login page 
+// so the header restores the "Login" button for a fresh authentication try.
+sessionStorage.setItem('isLoggedIn', 'false');
+sessionStorage.removeItem('currentUser');
+
 const logregBox = document.querySelector('.logreg-box');
 const registerForm = document.querySelector('.form-box.register form');
 const loginForm = document.querySelector('.form-box.login form');
@@ -19,6 +24,8 @@ document.addEventListener('click', (e) => {
 
     const text = target.textContent.toLowerCase().trim();
     const href = target.getAttribute('href') || '';
+    // TEAM NOTE: Ignore the Logout button click so it can redirect cleanly
+    if (text === 'logout') return;
 
     if (href.includes('#signup') || text === 'sign up' || text === 'register') {
         if(target.tagName === 'A') e.preventDefault(); 
@@ -71,11 +78,15 @@ if (window.location.hash === '#signup') {
     const userData = { name: name, password: password };
     localStorage.setItem(email, JSON.stringify(userData));
 
-    alert('Account created successfully! Please Sign In.');
+    // TEAM NOTE: Mark user as logged in so they can access course.html, then redirect to Home
+    sessionStorage.setItem('isLoggedIn', 'true');
+    sessionStorage.setItem('currentUser', name);
+
+    alert('Account created successfully! Redirecting to Home page...');
     registerForm.reset();
-    logregBox.classList.remove('active');
-    window.location.hash = 'signin';
+    window.location.href = 'home.html';
 });
+
 
 
     loginForm.addEventListener('submit', (e) => {
@@ -97,5 +108,40 @@ if (window.location.hash === '#signup') {
         return;
     }
 
+    // TEAM NOTE: Mark user as logged in so they can access course.html, then redirect to Home
+    sessionStorage.setItem('isLoggedIn', 'true');
+    sessionStorage.setItem('currentUser', userData.name);
+
     alert(`Welcome back, ${userData.name}!`);
+    window.location.href = 'home.html'; 
+});
+
+// ============================================================================
+// ULTIMATE FLOATING LABEL FIX (INLINE STYLE OVERRIDE)
+// ============================================================================
+document.querySelectorAll('.input-box').forEach((box) => {
+    const input = box.querySelector('input');
+    const label = box.querySelector('label');
+    if (!input || !label) return;
+
+    function checkFloat() {
+        // If the input is focused OR has any text typed inside it
+        if (document.activeElement === input || input.value.length > 0) {
+            label.style.setProperty('top', '-5px', 'important');
+            label.style.setProperty('color', '#2b70fa', 'important');
+            label.style.setProperty('font-size', '13px', 'important');
+        } else {
+            // Reset back to center when empty and not clicked
+            label.style.removeProperty('top');
+            label.style.removeProperty('color');
+            label.style.removeProperty('font-size');
+        }
+    }
+
+    input.addEventListener('focus', checkFloat);
+    input.addEventListener('blur', checkFloat);
+    input.addEventListener('input', checkFloat);
+    
+    // Run once on page load
+    checkFloat();
 });

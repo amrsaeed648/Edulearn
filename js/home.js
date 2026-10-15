@@ -21,12 +21,44 @@ async function loadComponents() {
     );
     initThemeToggle();
     setActiveNavLink();
+
+    updateAuthButtons(); // TEAM NOTE: Call function to check if user is logged in and swap Login/Logout button
+
     function setActiveNavLink() {
     const page = location.pathname.split("/").pop() || "home.html";
     document.querySelectorAll("#header-container .nav a").forEach((link) => {
         if (link.getAttribute("href") === page) link.classList.add("active");
         });
     } 
+
+    // ========================================================================
+    // TEAM NOTE: Added function to swap "Login" to "Logout" when authenticated
+    // ========================================================================
+    function updateAuthButtons() {
+        const loginBtn = document.querySelector("#header-container .actions .btn.outline");
+        const signupBtn = document.querySelector("#header-container .actions .btn.solid");
+        if (!loginBtn) return;
+
+        if (sessionStorage.getItem("isLoggedIn") === "true") {
+            loginBtn.textContent = "Logout";
+            loginBtn.setAttribute("href", "#");
+            if (signupBtn) signupBtn.style.display = "none"; // Hide Sign Up while logged in
+
+            loginBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                sessionStorage.setItem("isLoggedIn", "false");
+                sessionStorage.removeItem("currentUser");
+                alert("You have been logged out.");
+                window.location.href = "login.html#signin";
+            });
+        } else {
+            loginBtn.textContent = "Login";
+            loginBtn.setAttribute("href", "login.html#signin");
+            if (signupBtn) signupBtn.style.display = "inline-block";
+        }
+    }
+    // ========================================================================
+
 }
 
 loadComponents();
@@ -65,5 +97,37 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         );
     }
+});
+
+
+// ============================================================================
+// 5. FLOATING LABEL FIX FOR ALL INPUTS (Username, Email, Password)
+// ============================================================================
+document.querySelectorAll('.input-box input').forEach((input) => {
+    // Check immediately if browser auto-filled the input
+    if (input.value.trim() !== '') {
+        input.parentElement.classList.add('has-text');
+    }
+
+    // Float label up when user clicks inside
+    input.addEventListener('focus', () => {
+        input.parentElement.classList.add('has-text');
+    });
+
+    // Keep label at the top after typing, or drop it back down if emptied
+    input.addEventListener('blur', () => {
+        if (input.value.trim() !== '') {
+            input.parentElement.classList.add('has-text');
+        } else {
+            input.parentElement.classList.remove('has-text');
+        }
+    });
+
+    // Also update live while typing
+    input.addEventListener('input', () => {
+        if (input.value.trim() !== '') {
+            input.parentElement.classList.add('has-text');
+        }
+    });
 });
 

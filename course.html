@@ -19,6 +19,15 @@
     <link rel="stylesheet" href="css/courses.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+
+<!-- TEAM NOTE: Route protection - redirects unauthenticated users to Login -->
+    <script>
+      if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+        alert('You must be logged in to view our courses!');
+        window.location.href = 'login.html#signin';
+      }
+    </script>
+
 </head>
 <body>
     <div id="header-container"></div>
