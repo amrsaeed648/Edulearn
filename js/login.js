@@ -84,7 +84,7 @@ if (window.location.hash === '#signup') {
 
     alert('Account created successfully! Redirecting to Home page...');
     registerForm.reset();
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
 });
 
 
@@ -113,7 +113,7 @@ if (window.location.hash === '#signup') {
     sessionStorage.setItem('currentUser', userData.name);
 
     alert(`Welcome back, ${userData.name}!`);
-    window.location.href = 'home.html'; 
+    window.location.href = 'index.html'; 
 });
 
 // ============================================================================

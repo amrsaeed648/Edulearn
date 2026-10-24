@@ -25,7 +25,7 @@ async function loadComponents() {
     updateAuthButtons(); // TEAM NOTE: Call function to check if user is logged in and swap Login/Logout button
 
     function setActiveNavLink() {
-    const page = location.pathname.split("/").pop() || "home.html";
+    const page = location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll("#header-container .nav a").forEach((link) => {
         if (link.getAttribute("href") === page) link.classList.add("active");
         });
