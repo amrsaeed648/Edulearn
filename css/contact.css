@@ -32,7 +32,7 @@
 }
 .contact-card {
   display: flex;
-  width: 60%;
+  width: 80%;
   align-items: center;
   box-shadow: var(--shadow-me);
   height: 120px;
@@ -95,7 +95,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60%;
+  width: 80%;
   padding: 20px;
   border-radius: 20px;
   box-shadow: var(--shadow-me);
@@ -141,7 +141,7 @@ textarea:focus {
 /* end main section style */
 
 /* design adjustment for smaller screens */
-@media (max-width: 900px) {
+@media (max-width: 1023px) {
   .contact-main {
     flex-wrap: wrap;
   }
@@ -153,5 +153,11 @@ textarea:focus {
     width: 100%;
     margin: 20px;
     justify-content: center;
+  }
+  .contact-card {
+    width: 90%;
+  }
+  .contact-main-right form {
+    width: 95%;
   }
 }
